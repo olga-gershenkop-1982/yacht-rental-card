@@ -32,6 +32,7 @@
         const description = 'Яхта 401 длиной 12.5 метров и шириной 4.2 метра';
         const img = 'img/photo-card-1.jpg';
         const price = 14000;
+        const formattedPrice = price.toLocaleString();
         return (
           <section className="rent">
             <ul className="cards">
@@ -50,7 +51,7 @@
                   </div>
                   <p className="card-price">
                     <span className="card-price-name">Цена:</span>
-                    <span className="card-price-value">{price}</span>
+                    <span className="card-price-value">{formattedPrice}</span>
                   </p>
                 </li>
               }
